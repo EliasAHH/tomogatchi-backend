@@ -8,4 +8,5 @@ class User < ApplicationRecord
            username: self.username
         }
     end 
+
 end

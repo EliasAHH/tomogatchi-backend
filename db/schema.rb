@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(version: 2021_03_09_060135) do
   create_table "tomogatchis", force: :cascade do |t|
     t.string "name"
     t.integer "user_id"
-    t.integer "happiness_meter"
-    t.integer "hunger_meter"
+    t.integer "happiness_meter", default: 60
+    t.integer "hunger_meter", default: 60
     t.integer "total_points"
     t.boolean "alive", default: true
     t.datetime "created_at", precision: 6, null: false
